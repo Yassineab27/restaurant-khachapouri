@@ -8,6 +8,105 @@ body {
     background: $color-dark;
 }
 
+.navbar {
+    position: relative;
+    z-index: 10;
+    &-navigation {
+        display: flex;
+
+        &-left {
+            width: 50vw;
+            height: 100vh;
+            background: rgba(187, 187, 187, 0.979);
+            position: fixed;
+            left: -55%;
+            transition: all 0.7s cubic-bezier(1, 0, 0, 1);
+
+            .left-img {
+                width: 50%;
+                position: absolute;
+                box-shadow: 0 15px 16px rgba($color-black, 0.5);
+                opacity: 0.7;
+                border-radius: 10px;
+            }
+
+            .left-img-1 {
+                top: 15%;
+                left: 15%;
+            }
+
+            .left-img-2 {
+                top: 35%;
+                left: 25%;
+            }
+
+            .left-img-3 {
+                top: 55%;
+                left: 35%;
+            }
+
+        }
+
+        &-right {
+            width: 50vw;
+            height: 100vh;
+            background: #1f1d1df1;
+            position: fixed;
+            right: -55%;
+            transition: all 0.7s cubic-bezier(1, 0, 0, 1);
+            @include flexLayout;
+        }
+
+        .nav-list {
+            &-item {
+                list-style: none;
+            }
+
+            &-link {
+                font-family: $font-dancingScript;
+                font-size: 50px;
+                @include textStyles(capitalize);
+                color: $color-secondary;
+                text-decoration: none;
+                display: block;
+                margin: 1rem;
+                text-align: center;
+                transition: all 0.7s ease;
+
+                &:hover {
+                    color: $color-primary;
+                    letter-spacing: 4px;
+                    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.568);
+                }
+            }
+        }
+    }
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+    left: -5px;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+    right: -5px;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu {
+    transform: rotate(90deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+    transform: rotate(-40deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+    opacity: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+    transform: rotate(40deg);
+}
+
 .header {
     width: 100%;
     height: 100vh;
