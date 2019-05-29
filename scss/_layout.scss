@@ -105,3 +105,11 @@ body {
         }
     }
 }
+
+.gallery {
+    margin: 5rem 0;
+    .cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

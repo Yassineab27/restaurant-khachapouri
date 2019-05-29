@@ -1,3 +1,7 @@
+.card-overlay, .card-img {
+  height: 100%;
+  width: 100%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -88,6 +92,12 @@ body {
       .about-right .stars .star {
         margin-right: 10px; }
 
+.gallery {
+  margin: 5rem 0; }
+  .gallery .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+
 .main-heading {
   font-family: "Dancing Script", cursive;
   font-size: 100px;
@@ -118,3 +128,56 @@ body {
   .main-btn:hover {
     background: #d3ab55;
     color: #262626; }
+
+.card {
+  width: 33%;
+  height: 30vw;
+  position: relative;
+  margin: 3px auto;
+  overflow: hidden; }
+  .card:hover .card-overlay {
+    left: 0; }
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    background: rgba(211, 171, 85, 0.5);
+    color: #fff;
+    transition: left 0.7s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .card-overlay-heading {
+      font-family: "Nunito", sans-serif;
+      font-size: 50px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: capitalize; }
+    .card-overlay-paragraph {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 30px;
+      margin-bottom: 30px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: capitalize; }
+    .card-overlay-btn {
+      width: 150px;
+      height: 40px;
+      color: #d3ab55;
+      background: #fff;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 1px solid #d3ab55;
+      border-radius: 30px;
+      outline: none;
+      cursor: pointer; }
+      .card-overlay-btn:hover {
+        box-shadow: 1px 1px 4px rgba(51, 51, 51, 0.719); }
+  .card-img {
+    object-fit: cover;
+    opacity: 0.5; }
