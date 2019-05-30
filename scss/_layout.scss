@@ -186,14 +186,16 @@ body {
         left: -900px;;
         img {
             width: 100%;
-            opacity: 0.7;
+            border-radius: 15px;
+            box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.808);
         }
+        
         animation: slide 1s 2s forwards ease;
 
         @keyframes slide {
             0% { transform: translateX(-900px); opacity: 0;}
-            70% { transform: translateX(800px); opacity: 0;}
-            100% { transform: translateX(900px); opacity: 1;}
+            70% { transform: translateX(800px); transform: rotateZ(80deg); opacity: 0;}
+            100% { transform: translateX(920px); opacity: 1;}
         }
 
 
