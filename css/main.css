@@ -65,6 +65,15 @@ body {
         color: #d3ab55;
         letter-spacing: 4px;
         text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.568); }
+      @media (max-width: 500px) {
+        .navbar-navigation .nav-list-link {
+          font-size: 40px; } }
+      @media (max-width: 425px) {
+        .navbar-navigation .nav-list-link {
+          font-size: 30px; } }
+      @media (max-width: 335px) {
+        .navbar-navigation .nav-list-link {
+          font-size: 20px; } }
 
 .checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
   left: -5px; }
@@ -109,6 +118,9 @@ body {
   display: flex;
   align-items: center;
   margin: 3rem 0; }
+  @media (max-width: 925px) {
+    .about {
+      margin-top: 5rem; } }
   .about-left {
     width: 40%;
     position: relative;
@@ -116,17 +128,36 @@ body {
     .about-left img {
       width: 100%;
       opacity: 0.7; }
+    @media (max-width: 750px) {
+      .about-left {
+        display: none;
+        width: 0; } }
   .about-right {
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media (max-width: 750px) {
+      .about-right {
+        width: 100%; } }
     .about-right .main-heading {
       font-size: 50px; }
+      @media (max-width: 360px) {
+        .about-right .main-heading {
+          font-size: 40px; } }
+      @media (max-width: 345px) {
+        .about-right .main-heading {
+          font-size: 30px; } }
     .about-right .sub-heading {
       color: #000;
       margin-bottom: 20px;
       text-shadow: 1px 1px 4px #fff; }
+      @media (max-width: 360px) {
+        .about-right .sub-heading {
+          font-size: 20px; } }
+      @media (max-width: 345px) {
+        .about-right .sub-heading {
+          font-size: 17px; } }
     .about-right .description {
       font-family: "Josefin Sans", sans-serif;
       font-style: italic;
@@ -136,10 +167,25 @@ body {
       text-align: justify; }
       .about-right .description::first-letter {
         padding-left: 15px; }
+      @media (max-width: 750px) {
+        .about-right .description {
+          font-size: 18px; } }
+      @media (max-width: 500px) {
+        .about-right .description {
+          font-size: 15px; } }
+      @media (max-width: 360px) {
+        .about-right .description {
+          font-size: 14px; } }
+      @media (max-width: 345px) {
+        .about-right .description {
+          font-size: 12px; } }
     .about-right .stars {
       color: #d3ab55; }
       .about-right .stars .star {
         margin-right: 10px; }
+      @media (max-width: 360px) {
+        .about-right .stars {
+          font-size: 12px; } }
 
 .gallery {
   margin: 5rem 0; }
@@ -162,6 +208,9 @@ body {
     width: 300px;
     justify-content: space-between;
     margin-top: 1rem; }
+    @media (max-width: 350px) {
+      .footer .social {
+        width: 200px; } }
     .footer .social-item {
       list-style: none; }
     .footer .social-link {
@@ -172,7 +221,7 @@ body {
         color: #d3ab55; }
   .footer-copyrights {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     color: #bbb;
     font-weight: 300;
     letter-spacing: 2px;
@@ -186,6 +235,12 @@ body {
   top: 10%;
   right: 5%;
   z-index: 15; }
+  @media (max-width: 650px) {
+    .hamburger-menu {
+      width: 30px;
+      height: 30px;
+      top: 4%;
+      right: 5%; } }
   .hamburger-menu .menu {
     display: flex;
     flex-direction: column;
@@ -218,6 +273,12 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase; }
+  @media (max-width: 500px) {
+    .main-name {
+      font-size: 25px; } }
+  @media (max-width: 350px) {
+    .main-name {
+      font-size: 18px; } }
 
 .sub-name {
   color: #d3ab55;
@@ -226,12 +287,21 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Nunito", sans-serif; }
+  @media (max-width: 500px) {
+    .sub-name {
+      font-size: 12px; } }
 
 .main-heading {
   font-family: "Dancing Script", cursive;
   font-size: 100px;
   font-weight: 300;
   color: #d3ab55; }
+  @media (max-width: 1000px) {
+    .main-heading {
+      font-size: 80px; } }
+  @media (max-width: 925px) {
+    .main-heading {
+      font-size: 70px; } }
 
 .sub-heading {
   font-family: "Josefin Sans", sans-serif;
@@ -239,6 +309,12 @@ body {
   font-weight: 300;
   color: #bbb;
   margin-bottom: 40px; }
+  @media (max-width: 1000px) {
+    .sub-heading {
+      font-size: 30px; } }
+  @media (max-width: 400px) {
+    .sub-heading {
+      font-size: 20px; } }
 
 .main-btn {
   width: 170px;
@@ -283,6 +359,26 @@ body {
       font-weight: 300;
       letter-spacing: 2px;
       text-transform: capitalize; }
+      @media (max-width: 750px) {
+        .card-overlay-heading {
+          font-size: 40px;
+          text-align: center; } }
+      @media (max-width: 600px) {
+        .card-overlay-heading {
+          font-size: 30px;
+          text-align: center; } }
+      @media (max-width: 550px) {
+        .card-overlay-heading {
+          font-size: 25px;
+          text-align: center; } }
+      @media (max-width: 450px) {
+        .card-overlay-heading {
+          font-size: 20px;
+          text-align: center; } }
+      @media (max-width: 350px) {
+        .card-overlay-heading {
+          font-size: 18px;
+          text-align: center; } }
     .card-overlay-paragraph {
       font-family: "Josefin Sans", sans-serif;
       font-size: 30px;
@@ -306,6 +402,21 @@ body {
       cursor: pointer; }
       .card-overlay-btn:hover {
         box-shadow: 1px 1px 4px rgba(51, 51, 51, 0.719); }
+      @media (max-width: 750px) {
+        .card-overlay-btn {
+          width: 130px;
+          height: 30px;
+          font-size: 13px; } }
+      @media (max-width: 450px) {
+        .card-overlay-btn {
+          width: 120px;
+          height: 20px;
+          font-size: 11px; } }
+      @media (max-width: 375px) {
+        .card-overlay-btn {
+          width: 110px;
+          height: 18px;
+          font-size: 9px; } }
   .card-img {
     object-fit: cover;
     opacity: 0.5; }

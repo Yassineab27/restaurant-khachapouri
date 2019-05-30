@@ -6,6 +6,13 @@
     right: 5%;
     z-index: 15;
 
+    @media(max-width: 650px) {
+        width: 30px;
+        height: 30px;
+        top: 4%;
+        right: 5%;
+    }
+
     .menu {
         @extend %fullSpace;
         display: flex;
@@ -31,7 +38,7 @@
     height: 110px;
     border: 3px solid $color-primary;
     border-radius: 50%;
-    @include flexLayout
+    @include flexLayout;
 }
 
 .main-name {
@@ -40,6 +47,14 @@
     margin-left: 1rem;
     color: $color-secondary;
     @include textStyles;
+
+    @media(max-width: 500px) {
+        font-size: 25px;
+    }
+
+    @media(max-width: 350px) {
+        font-size: 18px;
+    }
 }
 
 .sub-name {
@@ -47,6 +62,10 @@
     text-align: center;
     @include textStyles;
     font-family: $font-nunito;
+
+    @media(max-width: 500px) {
+        font-size: 12px;
+    }
 }
 
 .main-heading {
@@ -54,6 +73,14 @@
     font-size: 100px;
     font-weight: 300;
     color: $color-primary;
+
+    @media(max-width: 1000px) {
+        font-size: 80px;
+    }
+
+    @media(max-width: 925px) {
+        font-size: 70px;
+    }
 }
 
 .sub-heading {
@@ -62,6 +89,14 @@
     font-weight: 300;
     color: $color-secondary;
     margin-bottom: 40px;
+
+    @media(max-width: 1000px) {
+        font-size: 30px;
+    }
+
+    @media(max-width: 400px) {
+        font-size: 20px;
+    }
 }
 
 .main-btn {
@@ -109,7 +144,32 @@
         &-heading {
             font-family: $font-nunito;
             font-size: 50px;
-            @include textStyles(capitalize)
+            @include textStyles(capitalize);
+
+            @media(max-width: 750px) {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            @media(max-width: 600px) {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            @media(max-width: 550px) {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            @media(max-width: 450px) {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            @media(max-width: 350px) {
+                font-size: 18px;
+                text-align: center;
+            }
         }
 
         &-paragraph {
@@ -117,6 +177,7 @@
             font-size: 30px;
             margin-bottom: 30px;
             @include textStyles(capitalize);
+
         }
 
         &-btn {
@@ -136,6 +197,24 @@
 
             &:hover {
                 box-shadow: 1px 1px 4px rgba(51, 51, 51, 0.719);
+            }
+
+            @media(max-width: 750px) {
+                width: 130px;
+                height: 30px;
+                font-size: 13px;
+            }
+
+            @media(max-width: 450px) {
+                width: 120px;
+                height: 20px;
+                font-size: 11px;
+            }
+
+            @media(max-width: 375px) {
+                width: 110px;
+                height: 18px;
+                font-size: 9px;
             }
         }
     }
